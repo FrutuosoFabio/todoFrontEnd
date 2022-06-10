@@ -14,13 +14,16 @@ import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon'; 
 import {MatButtonModule} from '@angular/material/button';
 import {MatBadgeModule} from '@angular/material/badge'; 
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { FinalizadosComponent } from './components/finalizados/finalizados.component'; 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ReadAllComponent
+    ReadAllComponent,
+    FinalizadosComponent
     
   ],
   imports: [
@@ -32,6 +35,7 @@ import {MatBadgeModule} from '@angular/material/badge';
     MatIconModule,
     MatButtonModule,
     MatBadgeModule,
+    MatSnackBarModule,
     HttpClientModule
     
 
