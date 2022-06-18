@@ -12,6 +12,13 @@ export class TodoService {
   baseUrl = environment.baseUrl;
   constructor(private http: HttpClient, private snack: MatSnackBar) { }
 
+  findbyid(id: any):Observable<todo> {
+    const url = `${this.baseUrl}/${id}`
+    return this.http.get<todo>(url);
+
+
+  }
+
   findAll(): Observable<todo[]>{
     return this.http.get<todo[]>(this.baseUrl);
   }
